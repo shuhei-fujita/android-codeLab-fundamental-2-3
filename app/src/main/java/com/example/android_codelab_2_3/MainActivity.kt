@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
         setListeners()
     }
 
+//    ハンドラーをここに書きます
     private fun makeColored(view: View) {
         when (view.id) {
 
@@ -28,14 +29,15 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+//    ビューを取得して，リスナーを定義します
     private fun setListeners() {
 
+//        ビューを取得します
         val boxOneText = findViewById<TextView>(R.id.box_one_text)
         val boxTwoText = findViewById<TextView>(R.id.box_two_text)
         val boxThreeText = findViewById<TextView>(R.id.box_three_text)
         val boxFourText = findViewById<TextView>(R.id.box_four_text)
         val boxFiveText = findViewById<TextView>(R.id.box_five_text)
-
         val rootConstraintLayout = findViewById<View>(R.id.constraint_layout)
 
 //        全てのビューのインスタンスをここに格納します．
